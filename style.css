@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-grey: #3c3c3b;
+  --dark-grey: #343432;
+  --black: #131515;
+  --violet: #4c1a57;
+  --yellow: #f5d547;
+  --bright: #ebebd3;
+  --gradient-color: linear-gradient(90deg, #4c1a57 0%, #131515 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--bg-grey);
+  color: var(--bright);
+}
+body,
+html,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: circle;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-form-content {
+  display: inline-block;
+  align-items: center;
+  padding: 4rem;
+}
+.header-form-content h1 {
+  font-size: 3.2rem;
+}
+
+.header-form-content p,
+ul {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.header-icon {
+  color: var(--bright);
+  font-size: 2.4rem;
+}
+.contact-container {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+  width: 60rem;
+  height: 40rem;
+  margin: 0 auto;
+  background: var(--gradient-color);
+  border-radius: 1.8rem;
+  padding: 6rem;
+}
+
+.contact-info-container {
+  gap: 1.6rem;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 4rem;
+}
+
+.contact-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-radius: 0.8rem;
+  margin-inline: auto;
+}
+
+.contact-input {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--dark-grey);
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  width: 48rem;
+  outline: 0;
+}
+
+.contact-input ::placeholder {
+  color: var(--bright);
+}
+
+.contact-input:focus-within {
+  outline: 0.2rem var(--dark-grey) solid;
+}
+
+.save-contact-button {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+  background: var(--yellow);
+  border: 0;
+  border-radius: 0.8rem;
+  width: 48rem;
+  height: 6rem;
+  cursor: pointer;
+}
